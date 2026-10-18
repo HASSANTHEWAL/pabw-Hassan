@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6fb;
+  color: #1f2a44;
+  line-height: 1.6;
+}
+
+.header {
+  background: #003796;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.header p {
+  opacity: 0.9;
+}
+
+.container {
+  max-width: 960px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #b9c6e2;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  color: #003796;
+  margin-bottom: 0.5rem;
+}
+
+.project-list {
+  list-style: none;
+}
+
+.project-list li {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #e3e8f3;
+}
+
+.project-list li:last-child {
+  border-bottom: none;
+}
+
+input,
+button {
+  font: inherit;
+  padding: 0.3rem 0.6rem;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+}
+
+button {
+  background: #003796;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #5a6680;
+}
+
+/* tablet and up: two columns */
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ===== Meeting 9 ===== */
+#filter button {
+  background: #ffffff;
+  color: #003796;
+  border: 1px solid #003796;
+}
+
+#filter button.active {
+  background: #003796;
+  color: #ffffff;
+}
+
+#empty-msg {
+  color: #5a6680;
+  font-style: italic;
+}
+
+form p {
+  margin-bottom: 0.5rem;
+}
+
+form label {
+  display: block;
+}
+
+form input,
+form select {
+  width: 100%;
+  font: inherit;
+  padding: 0.3rem 0.6rem;
+}
+
+.error {
+  display: block;
+  color: #c0392b;
+  min-height: 1.2em;
+}
+
+[aria-invalid="true"] {
+  border: 2px solid #c0392b;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ===== Meeting 10 ===== */
+#news-status {
+  color: #5a6680;
+  font-style: italic;
+}
+
+.news-card {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e3e8f3;
+}
+
+.news-card:last-child {
+  border-bottom: none;
+}
+
+.news-card h3 {
+  font-size: 1rem;
+}
+
+.news-info {
+  font-size: 0.85rem;
+  color: #5a6680;
+}
+
+.news-card a {
+  color: #003796;
+}
